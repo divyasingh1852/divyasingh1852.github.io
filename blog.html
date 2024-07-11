@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+ *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+
+    background-color:white;
+    color:black;
+    font-family:'poppins',sans-serif;
+  }
+
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color:rgb(18,18,62);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul li{
+    list-style:none;
+    margin:0 23px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+
+nav ul li a:hover{
+    color:rgb(153,153,226);
+    font-size:1.4rem;
+}
+
+
+main hr{
+    border:0;
+    background:#9c97f1;
+    height:1.2px;
+    margin:30px 64px;
+}
+
+
+.left{
+    font-size:1.5rem
+}
+
+.right{
+    font-size:1rem;
+}
+
+
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    margin:90px 0;
+   align-items: center;
+
+}
+
+.firstSection > div{
+    width: 30%;
+}
+
+.leftSection{
+   font-size: 2rem;
+   margin: 70px 0;
+}
+
+
+.leftSection .button{
+    padding: 50px 0;
+}
+
+
+
+.leftSection .btn{
+   padding: 12px;
+   background: #1e2167;
+   color: white;
+   border: 2px solid white;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.btn{
+    border-radius: 22px;
+    background-color:dodgerblue;
+}
+
+.btn:hover{
+    color: dodgerblue;
+    background-color:white;
+
+}
+
+
+
+.rightSection img{
+
+    width:80%;
+    margin: 30px 0;
+}
+
+.purple{
+    color:rgb(170,107,228);
+}
+
+.text-gray{
+    font-size:1rem;
+    color:gray;
+}
+
+#element{
+    color:rgb(170,107,228);
+ 
+}
+
+.secondSection{
+
+    max-width: 80vw;
+    margin:auto;
+    height:100vh;
+}
+
+.secondSection h1{
+    font-size: 1.6rem;
+}
+
+.secondSection .box{
+    background:white;
+    width: 74vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+
+.secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 80px
+}
+
+
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+
+.vertical-title{
+    
+    position: relative;
+    top: 75px;
+    width: 150px;
+   font-size: 14px;
+
+}
+
+
+
+.vertical-desc{
+
+    position:relative;
+    top: 86px;
+    width: 150px;
+    color:gray;
+    font-size: 9px;
+
+
+}
+
+footer{
+    background-color: #0e0e1a;
+}
+
+
+
+.footer{
+
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+
+.footer ul{
+    list-style: none;
+}
+
+
+
+
+.footer > div{
+    width: 223px;
+}
+
+footer .footer-rights{
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+
+.contactform {
+    padding:0 34px;
+    padding-top: 144px;
+    font-family: 'Fira Sans' , sans-serif;
+}
+
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Fira Sans' , sans-serif;
+}
+
+
+.blogContainer h1{
+    font-family: 'Fira Sans' , sans-serif;
+      margin: 23px;
+}
+
+.blogItem p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <header>
+
+        <div class="sidebar">
+        <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+             </div>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="main">
+
+          <div class="blogcontainer">
+
+
+              <h1>Blog by Divya - The Web Legend</h1>
+              <div class="blogItem">
+                  <h2>Learn Javascript - in fun way!</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed nam qui aperiam maiores, quibusdam, sequi natus perspiciatis deserunt sit quis eaque expedita dicta ex mollitia quisquam. Voluptate, quibusdam impedit!</p>
+                  <button class="btn btn-sm">Read More</button>
+              </div>
+
+
+
+              <div class="blogItem">
+                <h2>Learn Javascript - in fun way!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed nam qui aperiam maiores, quibusdam, sequi natus perspiciatis deserunt sit quis eaque expedita dicta ex mollitia quisquam. Voluptate, quibusdam impedit!</p>
+                <button class="btn btn-sm">Read More</button>
+            </div>
+
+
+            <div class="blogItem">
+                <h2>Learn Javascript - in fun way!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed nam qui aperiam maiores, quibusdam, sequi natus perspiciatis deserunt sit quis eaque expedita dicta ex mollitia quisquam. Voluptate, quibusdam impedit!</p>
+                <button class="btn btn-sm">Read More</button>
+            </div>
+
+
+
+            <div class="blogItem">
+                <h2>Learn Javascript - in fun way!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed nam qui aperiam maiores, quibusdam, sequi natus perspiciatis deserunt sit quis eaque expedita dicta ex mollitia quisquam. Voluptate, quibusdam impedit!</p>
+                <button class="btn btn-sm">Read More</button>
+            </div>
+
+               
+
+
+
+
+
+
+
+             </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
